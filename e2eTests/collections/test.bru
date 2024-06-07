@@ -1,0 +1,19 @@
+meta {
+  name: test
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/shorten
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  "{\"long_url\":\"https://example.com\"}"
+}
