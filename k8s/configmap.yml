@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: redis-config
+data:
+  redis_endpoint: "${REDIS_ENDPOINT}" # These values will be set by the GitHub Actions workflow
+  redis_port: "${REDIS_PORT}"
