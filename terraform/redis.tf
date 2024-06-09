@@ -20,11 +20,3 @@ resource "aws_elasticache_cluster" "example" {
     Name = "example"
   }
 }
-
-output "redis_endpoint" {
-  value = aws_elasticache_cluster.example.cache_nodes.0.address
-}
-
-output "redis_port" {
-  value = aws_elasticache_cluster.example.port
-}
